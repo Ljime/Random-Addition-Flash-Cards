@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>FlashCards</title>
+</head>
+<body>
+    <h1 class="header">What is the result of?</h1>
+    <div class="cardContainer">
+        <div class="card">
+            <p class="front" id="q1">Question</p>
+            <p class="back" id="a1">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q2">Question</p>
+            <p class="back" id="a2">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q3">Question</p>
+            <p class="back" id="a3">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q4">Question</p>
+            <p class="back" id="a4">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q5">Question</p>
+            <p class="back" id="a5">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q6">Question</p>
+            <p class="back" id="a6">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q7">Question</p>
+            <p class="back" id="a7">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q8">Question</p>
+            <p class="back" id="a8">Ans</p>
+        </div>
+        <div class="card">
+            <p class="front" id="q9">Question</p>
+            <p class="back" id="a9">Ans</p>
+        </div>
+    </div>
+    <button class="random" onclick="randomize()">Randomize</button>
+</body>
+
+<script> 
+const q1 = document.getElementById("q1");
+const q2 = document.getElementById("q2");
+const q3 = document.getElementById("q3");
+const q4 = document.getElementById("q4");
+const q5 = document.getElementById("q5");
+const q6 = document.getElementById("q6");
+const q7 = document.getElementById("q7");
+const q8 = document.getElementById("q8");
+const q9 = document.getElementById("q9");
+
+const a1 = document.getElementById("a1");
+const a2 = document.getElementById("a2");
+const a3 = document.getElementById("a3");
+const a4 = document.getElementById("a4");
+const a5 = document.getElementById("a5");
+const a6 = document.getElementById("a6");
+const a7 = document.getElementById("a7");
+const a8 = document.getElementById("a8");
+const a9 = document.getElementById("a9");
+
+function randomize() {
+    let num1 = Math.floor(Math.random() * 100) + 1;
+    let num2 = Math.floor(Math.random() * 100) + 1;
+    q1.innerHTML =  num1 + " + "  +num2 + " =";
+    a1.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q2.innerHTML =  num1 + " + "  +num2 + " =";
+    a2.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q3.innerHTML =  num1 + " + "  +num2 + " =";
+    a3.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q4.innerHTML =  num1 + " + "  +num2 + " =";
+    a4.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q5.innerHTML =  num1 + " + "  +num2 + " =";
+    a5.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q6.innerHTML =  num1 + " + "  +num2 + " =";
+    a6.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q7.innerHTML =  num1 + " + "  +num2 + " =";
+    a7.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q8.innerHTML =  num1 + " + "  +num2 + " =";
+    a8.innerHTML = num1 + num2;
+
+    num1 = Math.floor(Math.random() * 100) + 1;
+    num2 = Math.floor(Math.random() * 100) + 1;
+    q9.innerHTML =  num1 + " + "  +num2 + " =";
+    a9.innerHTML = num1 + num2; 
+}
+
+</script>
+
+</html>
